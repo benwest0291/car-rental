@@ -1,0 +1,11 @@
+.trip__plan{
+
+    margin-bottom: 100px;
+
+    &__card{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

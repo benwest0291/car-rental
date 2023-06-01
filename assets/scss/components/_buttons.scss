@@ -1,0 +1,130 @@
+.navigation__contact__btn{
+    background-color: $orange;
+    color: $white;
+    height: 40px;
+    padding: 0 30px;
+    border-color: transparent;
+    -webkit-box-shadow: 0px 6px 17px 4px rgba(0,0,0,0.27); 
+    box-shadow: 0px 6px 17px 4px rgba(0,0,0,0.27);
+    border-radius: 3px;
+    transition: ease-in .4s;
+
+    &:hover, &:focus{
+        background-color: $black;
+        color: $white;
+    }
+}
+
+.footer__contact__btn{
+    background-color: $orange;
+    width: 100%;
+    padding: 12px 65px;
+    color: $white;
+    border-color: transparent;
+    -webkit-box-shadow: 0px 6px 17px 4px rgba(0,0,0,0.27); 
+    box-shadow: 0px 6px 17px 4px rgba(0,0,0,0.27);
+    border-radius: 3px;
+    transition: ease-in .4s;
+
+    &:hover, &:focus{
+        background-color: $black;
+    }
+}
+
+.masthead__orange__btn, .deals__btn{
+    background-color: $orange;
+    padding: 13px 30px;
+    color: $white;
+    border-color: transparent;
+    -webkit-box-shadow: 0px 6px 17px 4px rgba(0,0,0,0.27); 
+    box-shadow: 0px 6px 17px 4px rgba(0,0,0,0.27);
+    font-size: 14px;
+    border-radius: 3px;
+    font-weight: 600;
+    transition: ease-in .4s;
+
+    &:hover, &:focus{
+        background-color: $black;
+        color: $white;
+    }
+}
+
+.masthead__black__btn{
+    background-color: $black;
+    padding: 13px 30px;
+    color: $white;
+    border-color: transparent;
+    font-size: 14px;
+    border-radius: 3px;
+    font-weight: 600;
+    transition: ease-in .4s;
+
+    &:hover, &:focus{
+        background-color: $orange;
+        color: $white;
+    }
+}
+
+.masthead__btn__icon__tick{
+    width: 10px;
+    margin-left: 8px;
+}
+
+.masthead__btn__icon__chevron{
+    width: 8px;
+    margin-left: 5px;
+}
+
+.contact__btn{
+    background-color: $orange;
+    width: 100%;
+    padding: 12px 65px;
+    color: $white;
+    border-color: transparent;
+    -webkit-box-shadow: 0px 6px 17px 4px rgba(0,0,0,0.27); 
+    box-shadow: 0px 6px 17px 4px rgba(0,0,0,0.27);
+    border-radius: 3px;
+    transition: ease-in .4s;
+
+    &:hover, &:focus{
+        background-color: $black;
+    }
+}
+
+.vehicle__booking__form__btn{
+    background-color: $orange;
+    width: 100%;
+    padding: 8px 65px;
+    color: $white;
+    border-color: transparent;
+    -webkit-box-shadow: 0px 6px 17px 4px rgba(0,0,0,0.27); 
+    box-shadow: 0px 6px 17px 4px rgba(0,0,0,0.27);
+    border-radius: 3px;
+    margin-top: 39px;
+    transition: ease-in .4s;
+
+    &:hover, &:focus{
+        background-color: $black;
+    }
+}
+
+.vehicle__card__info__btn{
+    background-color: $orange;
+    width: 100%;
+    padding: 12px 122px;
+    color: $white;
+    border-color: transparent;
+    -webkit-box-shadow: 0px 6px 17px 4px rgba(0,0,0,0.27); 
+    box-shadow: 0px 6px 17px 4px rgba(0,0,0,0.27);
+    border-radius: 3px;
+
+    &:hover, &:focus{
+        transition: ease-in .4s;
+        background-color: $black;
+        color: $white;
+    }
+
+    @media(min-width: $sm-width){
+        padding: 12px 106px;
+    }
+}

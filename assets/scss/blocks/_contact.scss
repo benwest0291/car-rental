@@ -1,0 +1,53 @@
+.contact__block{
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: auto;
+    display: grid;
+
+    @media(min-width: $var-width){
+    padding-bottom: 80px;
+    }
+
+    &__info__one{
+        width: 60%;
+  
+        @media(min-width: $var-width){
+            width: 36%;
+        
+            }
+        p{
+            color: $black;
+            font-weight: 700;
+        }
+    }
+
+    &__info__two{
+        width: 43%;
+    
+        
+        @media(min-width: $var-width){
+        width: 25.5%;
+     
+        }
+
+        p{
+            color: $black;
+            font-weight: 700;
+        }
+    }
+    
+
+    &__location{
+        margin-top: 10px;
+        font-weight: 700;
+        color: $black;
+    }
+
+    
+    &__container{
+
+        @media(min-width: $var-width){
+        width: 90%;
+        }
+    }
+}

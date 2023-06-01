@@ -1,0 +1,24 @@
+.vehicle__booking__form{
+    box-shadow: 0px 20px 25px -2px rgba(0,0,0,0.2);
+    margin-bottom: 120px;
+
+    &__bg{
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__main__heading{
+        font-size: 25px;
+        font-weight: 800;
+    }
+
+    &__field__heading{
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        color: $black;
+    }
+}
+
+
+
