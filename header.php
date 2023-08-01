@@ -1,6 +1,13 @@
 <?php
-// Customizer Varibles 
+$menuLocations = get_nav_menu_locations();
 $logo = get_theme_mod('company_logo');
+
+if (isset($menuLocations['header'])) {
+    $header_links = wp_get_nav_menu_items($menuLocations['header']);
+} else {
+    $header_links = null;
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -11,7 +18,7 @@ $logo = get_theme_mod('company_logo');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head(); ?>
-    <title>Car Rental</title>
+    <title><?php wp_title();?></title>
 </head>
 
 <body <?php body_class(); ?>>
@@ -21,18 +28,28 @@ $logo = get_theme_mod('company_logo');
                 <div class="col-12 col-md-2 w-sm-25">
                     <a href="<?php echo site_url("/") ?>"><img class=" mt-3 mt-sm-5 " src="<?php echo $logo; ?>" alt="<?php echo get_bloginfo("name"); ?>"></img></a>
                 </div>
-                <div class="col-12 col-md-8">
-                    <ul class="navigation">
-                        <?php
-                        wp_nav_menu(array(
-                            "theme_location" => "headerMenu",
-                            "menu__class" => "header__navigation__links"
-                        ));
-                        ?>
-                    </ul>
+                <div class="navigation__links__container col-12 col-md-8">
+                    <?php if (!empty($header_links)) { ?>
+                        <nav>
+                            <ul class="navigation__links list-unstyled">
+                                <?php foreach ($header_links as $item) { ?>
+                                    <li class="navigation__link m-1">
+                                        <a title="<?php echo $item->title; ?>" href="<?php echo $item->url; ?>"><?php echo $item->title; ?></a>
+                                    </li>
+                                <?php } ?>
+                                <li class="navigation__link list-unstyled m-1 d-lg-none d-block">
+                                    <a href="<?php site_url('/contact')?>">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    <?php } ?>
                 </div>
                 <div class="col-12 col-md-2 d-flex justify-content-end">
-                    <a class="navigation__contact__btn mt-5 pt-2" href="/contact">Contact</a>
+                    <ul>
+                        <li class="navigation__link mt-5 list-unstyled m-1 d-none d-lg-block">
+                            <a class="navigation__contact__btn" href="<?php site_url('/contact')?>">Contact</a>
+                        </li>
+                    </ul>
                     <div class="navigation__burger js-navigation__burger">
                         <div class="line__one"></div>
                         <div class="line__two"></div>

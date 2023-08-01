@@ -1,0 +1,30 @@
+.vehicle__card{
+    width: 100%;
+
+    &__image{
+        object-fit: cover;
+
+        @include media-breakpoint-up(md) {
+             height: 310px;
+        }
+    }
+
+    &__info{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__heading{
+        font-size: 25px;
+        font-weight: 800;
+    }
+
+    &__car{
+        height: 20px;
+        width: 25px;
+    }
+
+    &__content{
+        padding: 20px;
+    }
+}

@@ -3,15 +3,12 @@ $aboutImage = $data["about_image"];
 $aboutSmallHeading = $data["about_small_heading"];
 $aboutMainHeading = $data["about_main_heading"];
 $aboutParagraph = $data["about_paragraph"];
-
 $aboutIconOne = $data["about_icon_one"];
 $aboutServiceNumberOne = $data["about_service_number_one"];
 $aboutServiceOne = $data["about_service_one"];
-
 $aboutIconTwo = $data["about_icon_two"];
 $aboutServiceNumberTwo = $data["about_service_number_two"];
 $aboutServiceTwo = $data["about_service_two"];
-
 $aboutIconThree = $data["about_icon_three"];
 $aboutServiceNumberThree = $data["about_service_number_three"];
 $aboutServiceThree = $data["about_service_three"];

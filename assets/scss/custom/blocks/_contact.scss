@@ -1,0 +1,34 @@
+.contact__block{
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: auto;
+    display: grid;
+
+    @include media-breakpoint-up(md) {
+    padding-bottom: 80px;
+    }
+
+    &__info__one{
+        width: 200px;
+
+        p{
+            color: $black;
+            font-weight: $font-weight-bold;
+        }
+    }
+
+    &__info__two{
+        width: 150px;
+
+        p{
+            color: $black;
+            font-weight: $font-weight-bold;
+        }
+    }
+
+    &__location{
+        margin-top: 10px;
+        font-weight: $font-weight-bold;
+        color: $black;
+    }
+}

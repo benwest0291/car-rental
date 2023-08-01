@@ -1,0 +1,94 @@
+// Colors
+
+$orange: #FF4D30;
+$white: #fff;
+$black: #000;
+$grey: #706F7B;
+$offBlack: #2D2D2D;
+
+$primary: $orange;
+$secondary: $black;
+
+$theme-colors: (
+        "primary": $primary,
+        "secondary": $secondary
+);
+
+// Spacing
+$spacers: () !default;
+$spacers: map-merge(
+                (
+                        0: 0,
+                        1: 10px,
+                        105: 15px,
+                        2: 20px,
+                        205: 25px,
+                        3: 30px,
+                        4: 40px,
+                        5: 50px,
+                        6: 60px,
+                        7: 70px,
+                        8: 80px,
+                        9: 90px,
+                        10: 100px
+                ),
+                $spacers
+);
+
+// Body
+$body-bg: grey-100;
+
+// Links
+$link-decoration: none;
+$link-hover-decoration: none;
+
+// Components
+$border-radius: 50px;
+
+// Grid columns
+$grid-gutter-width: 40px;
+
+// Typography
+$font-family-sans-serif: 'Poppins', sans-serif;
+
+$font-size-base: 1.125rem; // 18px
+
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+
+$headings-font-weight: $font-weight-bold;
+
+// Buttons
+$btn-font-size: $font-size-base;
+$btn-border-width: 2px;
+
+$btn-font-weight: $font-weight-bold;
+$btn-box-shadow: none;
+$btn-focus-box-shadow: $btn-box-shadow;
+$btn-active-box-shadow: $btn-box-shadow;
+
+$btn-font-size-sm: 1rem;
+$btn-border-radius-sm: $border-radius;
+
+$btn-transition: color .3s ease-in-out, background-color .3s ease-in-out, border-color .3s ease-in-out, box-shadow .3s ease-in-out !default;
+
+// Forms
+$label-margin-bottom: 14px;
+
+$input-bg: $white;
+$input-font-size: $font-size-base;
+$input-color: $body-color;
+$input-border-color: $orange;
+$input-border-width: 2px;
+$input-box-shadow: none;
+
+// Form Input Group
+$input-group-addon-bg: $white;
+
+// FA
+$font-family-icons: 'Font Awesome 5 Pro';
+$font-icon-weight-regular: 400;
+$font-icon-weight-light: 300;
+

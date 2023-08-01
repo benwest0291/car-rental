@@ -5,15 +5,12 @@ $dealsMainHeading = $data["deals_main_heading"];
 $dealsParagraph = $data["deals_paragraph"];
 $dealsButtonText = $data["deals_button_text"];
 $dealsButtonUrl = $data["deals_button_url"];
-
 $dealsImageOne = $data["deals_image_one"];
 $dealsHeadingOne = $data["deals_heading_one"];
 $dealsParagraphOne = $data["deals_paragraph_one"];
-
 $dealsImageTwo = $data["deals_image_two"];
 $dealsHeadingTwo = $data["deals_heading_two"];
 $dealsParagraphTwo = $data["deals_paragraph_two"];
-
 $dealsImageThree = $data["deals_image_three"];
 $dealsHeadingThree = $data["deals_heading_three"];
 $dealsParagraphThree = $data["deals_paragraph_three"];
@@ -41,11 +38,11 @@ $dealsParagraphThree = $data["deals_paragraph_three"];
                     <?php } ?>
 
                     <?php if ($dealsParagraph != null) { ?>
-                        <p><?php echo $dealsParagraph; ?></p>
+                        <p class="mb-3"><?php echo $dealsParagraph; ?></p>
                     <?php } ?>
 
                     <?php if ($dealsButtonText != null) { ?>
-                        <a class="deals__btn text-decoration-none" href="<?php echo $dealsButtonUrl; ?>"><?php echo $dealsButtonText; ?><img class=" masthead__btn__icon__chevron" src="<?php echo get_template_directory_uri(); ?>/assets/images/cheveron.png"></a>
+                        <a class="deals__btn mt-3 text-decoration-none" href="<?php echo $dealsButtonUrl; ?>"><?php echo $dealsButtonText; ?><img class=" masthead__btn__icon__chevron" src="<?php echo get_template_directory_uri(); ?>/assets/images/cheveron.png"></a>
                     <?php } ?>
                 </div>
             </div>
@@ -53,7 +50,7 @@ $dealsParagraphThree = $data["deals_paragraph_three"];
             <div class="col-12 col-md-6 deals__right">
                 <div class="d-flex">
                     <?php if ($dealsImageOne != null) { ?>
-                        <img class="deals__icon__image mt-2" src="<?php echo $dealsImageOne['url']; ?>">
+                        <img class="deals__icon__image" src="<?php echo $dealsImageOne['url']; ?>">
                     <?php } ?>
 
                     <div>

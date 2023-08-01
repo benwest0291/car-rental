@@ -5,28 +5,27 @@
  * Stylesheets and Scripts
  *
  */
-function car_rental_files()
-{
 
+function add_theme_scripts()
+{
     // Styles
-    wp_enqueue_style("boostrap", "//cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css");
-    wp_enqueue_style("custom-google-fonts", "//fonts.googleapis.com/css2?family=Inter:wght@300&family=Josefin+Sans&family=Noto+Sans&family=Poppins:wght@600&family=Roboto:wght@500&family=Smythe&display=swap");
-    wp_enqueue_style("font-awesome", "//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
-    wp_enqueue_style("car_rental_main_styles", get_theme_file_uri("./assets/css/style.css"));
+    wp_enqueue_style('bootstrap', get_stylesheet_directory_uri() . '/assets/css/bootstrap.css', array(), '1');
+    wp_enqueue_style('slick', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', array(), '1');
+    wp_enqueue_style("poppins", "//fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Open+Sans&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800&family=Sofia&display=swap");
+    wp_enqueue_style('styles', get_stylesheet_directory_uri() . '/assets/css/styles.css', array(), '1.1');
 
     // Scripts
+    wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.5.1.min.js', array(), '3.5.1', true);
+    wp_enqueue_script('popper', 'https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js', array('jquery'), '2.11.6', true);
+    wp_enqueue_script('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js', array('jquery'), '5.2.3', true);
+    wp_enqueue_script('slick', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.js', array('jquery'), '1.8.1', true);
+    wp_register_script('custom', get_stylesheet_directory_uri() . '/assets/js/custom.js', array('jquery'), '1', true);
 
-    wp_enqueue_script("car_rental-js", get_theme_file_uri("./assets/js/index.js"), array("jquery"), "1.0", true);
-    wp_enqueue_script("boostrapJS", "//cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js", NULL, "1.0", true);
-
-    wp_localize_script("car_rental-js", "carRentalData", array(
-        "root_url" => get_site_url(),
-
-    ));
+    wp_enqueue_script('custom');
+    wp_enqueue_script('font-awesome', 'https://kit.fontawesome.com/ff41bfe92a.js', array(), '6.2.0', true);
 }
 
-
-add_action("wp_enqueue_scripts", "car_rental_files");
+add_action('wp_enqueue_scripts', 'add_theme_scripts');
 
 /**
  *
@@ -35,14 +34,20 @@ add_action("wp_enqueue_scripts", "car_rental_files");
  */
 function car_rental_setup()
 {
-    register_nav_menu("headerMenu", "Header Menu");
-    register_nav_menu("footerNav", "Footer Navigation");
-
-    add_theme_support("title-tag");
-    add_theme_support("post-thumbnails");
+    // Register navigation menus.
+    register_nav_menus(
+        array(
+            'header' => esc_html__('Header Menu', 'car-rental'),
+            'footer' => esc_html__('Footer Menu', 'car-rental'),
+        )
+    );
 }
 
 add_action("after_setup_theme", "car_rental_setup");
+
+//    add_theme_support("title-tag");
+//    add_theme_support("post-thumbnails");
+
 
 /**
  *

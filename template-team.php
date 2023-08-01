@@ -22,8 +22,10 @@ render_site_banner("meet_the_team_banner");
             while ($team->have_posts()) {
                 $team->the_post();
             ?>
-                <div class="col-12 col-md-4">
-                    <?php get_template_part("inc/partials/team-member-card"); ?>
+                <div class="col-12 col-lg-4">
+                    <div>
+                        <?php get_template_part("inc/partials/team-member-card"); ?>
+                    </div>
                 </div>
             <?php
             }

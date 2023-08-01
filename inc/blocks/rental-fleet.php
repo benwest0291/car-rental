@@ -39,7 +39,7 @@ $rentalFleetParagraph = $data["rental_fleet_paragraph"];
                         $vehicles->the_post();
                     ?>
                         <ul class="rental__fleet__block">
-                            <li class="js-vehicle-selected"><?php the_title(); ?></li>
+                            <li class="js-vehicle-selected mb-md-1"><?php the_title(); ?></li>
                         </ul>
                     <?php
                     }
@@ -58,7 +58,7 @@ $rentalFleetParagraph = $data["rental_fleet_paragraph"];
                     <div class="js-rental__fleet__block__chart">
                         <!-- JS INJECTED -->
                     </div>
-                    <button class="contact__btn mt-2">RESERVE NOW</button>
+                    <button class="contact__btn mt-1">RESERVE NOW</button>
                 </div>
             </div>
         </div>

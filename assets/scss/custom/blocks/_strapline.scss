@@ -1,0 +1,27 @@
+.strapline{
+    height: 180px;
+    background-repeat: no-repeat;
+    background-position:  center;
+    background-size: cover;
+
+    &__text{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        color: $white;
+
+        h2{
+            font-weight: 800;
+            color: $white;
+            font-size: 20px;
+            margin-top: 30px;
+            text-align: center;
+
+            @include media-breakpoint-up(md) {
+                margin-top: 30px;
+                font-size: 32px;
+            }
+        }
+    }
+}

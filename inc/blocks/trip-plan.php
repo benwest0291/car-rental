@@ -1,19 +1,15 @@
 <?php
 $tripPlanSmallHeading = $data["trip_plan_small_heading"];
 $tripPlanHeading = $data["trip_plan_main_heading"];
-
 $tripPlanImageOne = $data["trip_plan_image_one"];
 $tripPlanTitleOne = $data["trip_plan_title_one"];
 $tripPlanParagraphOne = $data["trip_plan_paragraph_one"];
-
 $tripPlanImageTwo = $data["trip_plan_image_two"];
 $tripPlanTitleTwo = $data["trip_plan_title_two"];
 $tripPlanParagraphTwo = $data["trip_plan_paragraph_two"];
-
 $tripPlanImageThree = $data["trip_plan_image_three"];
 $tripPlanTitleThree = $data["trip_plan_title_three"];
 $tripPlanParagraphThree = $data["trip_plan_paragraph_three"];
-
 ?>
 
 <section class="trip__plan">

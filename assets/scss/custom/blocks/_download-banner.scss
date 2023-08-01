@@ -1,0 +1,42 @@
+.mobile__download__banner{
+
+    //background-color: $offgrey;
+
+    &__container{
+
+        @include media-breakpoint-up(md) {
+        width: 70%;
+        margin-top: 40px;
+        }
+    }
+
+    &__btn{
+        width: 160px;
+        height: 60px;
+
+        &:hover, &:focus{
+            cursor: pointer;
+        }
+    }
+
+
+    &__image{
+
+        width: 360px;
+
+        @include media-breakpoint-up(md) {
+            width: 640px;
+            height: 400px;
+        }
+      
+    }
+
+    h2{
+        font-size: 35px;
+    }
+
+    p{
+        color: $grey;
+        font-size: 14px;
+    }
+}

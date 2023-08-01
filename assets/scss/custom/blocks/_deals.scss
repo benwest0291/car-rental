@@ -1,0 +1,50 @@
+.deals{
+
+    @include media-breakpoint-up(md) {
+        margin-bottom: 100px;
+    }
+
+    &__right{
+        margin-top: 50px;
+
+        @include media-breakpoint-up(md) {
+           margin-top: 0;
+        }
+    }
+
+    &__image{
+        width: 100%;
+
+        @include media-breakpoint-up(md) {
+            width: 75%;
+            margin-bottom: 50px;
+        }
+    }
+
+    &__text__conatiner{
+
+        @include media-breakpoint-up(md) {
+            width: 80%;
+        }
+    }
+
+    &__small__heading,   &__icon__heading{
+        font-size: 22px;
+        font-weight: 800;
+    }
+
+
+    &__icon__image{
+        width: 90px;
+        height: 90px;
+        margin-right: 20px;
+    } 
+    
+    &__icon__paragraph{
+
+        @include media-breakpoint-up(md) {
+            width: 80%;
+        }
+    }
+
+}

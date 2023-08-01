@@ -1,5 +1,4 @@
 <?php
-// custom feilds
 $model = get_field("model");
 $cost = get_field("cost");
 $stars = get_field("stars");
@@ -12,7 +11,6 @@ $seats = get_field("seats");
 
 <div class="vehicle__card card mb-4">
     <img class="vehicle__card__image" src="<?php the_post_thumbnail_url("post"); ?>" />
-
     <div class="vehicle__card__content">
         <div class="d-flex justify-content-between">
             <h6 class="vehicle__card__heading"><?php the_title(); ?></h6>
@@ -50,7 +48,6 @@ $seats = get_field("seats");
             <h6>per day</h6>
         </div>
 
-
         <div class="vehicle__card__info mt-3">
             <span>
                 <img class="vehicle__card__car" src="<?php echo get_template_directory_uri(); ?>/assets/images/car.png">
@@ -58,7 +55,6 @@ $seats = get_field("seats");
             <span>
                 <p><?php echo $model; ?></p>
             </span>
-
             <span>
                 <p><?php echo $seats; ?></p>
             </span>
@@ -71,20 +67,19 @@ $seats = get_field("seats");
             <span>
                 <img class="vehicle__card__car" src="<?php echo get_template_directory_uri(); ?>/assets/images/car.png">
             </span>
-
             <span>
                 <p><?php echo $transmition ?></p>
             </span>
             <span class="d-flex">
                 <p><?php echo $fuel; ?></p>
             </span>
-
             <span>
                 <img class="vehicle__card__car" src="<?php echo get_template_directory_uri(); ?>/assets/images/car.png">
             </span>
         </div>
-
-        <hr>
-        <a class="vehicle__card__info__btn" href="/contact">Book Ride</a>
+        <hr class="mb-3">
+        <div class="d-flex">
+            <a class="vehicle__card__info__btn text-center" href="/contact">Book Ride</a>
+        </div>
     </div>
 </div>

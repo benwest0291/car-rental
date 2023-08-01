@@ -1,0 +1,95 @@
+// Body
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Josefin+Sans&family=Noto+Sans&family=Poppins:wght@500;600;700&family=Roboto:wght@500&family=Smythe&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,body {
+  font-family: 'Poppins';
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+a {
+  font-weight: $font-weight-normal;
+  text-decoration: none;
+  color: $black;
+  transition: ease-in .4s;
+}
+
+a:hover, a:focus{
+  color: $orange;
+}
+
+h1{
+  font-size: 55px;
+  font-weight: bolder;
+  color: $black;
+  letter-spacing: .1;
+  line-height: 65px;
+}
+
+h2{
+  font-size: 42px;
+  font-weight: bolder;
+  color: $black;
+  letter-spacing: .1;
+  line-height: 52px;
+}
+
+h5{
+  font-weight: 900;
+  letter-spacing: .1;
+  color: $black;
+  line-height: 30px;
+}
+
+h3,h4,h6,{
+  color: $black;
+}
+
+p{
+  font-size: 16px;
+  color: $grey;
+}
+
+.orange__highlight{
+    color: $orange;
+}
+
+.star{
+    color: $orange;
+}
+
+.wpcf7-form-control {
+    padding: 10px;
+    background-color: #ededed;
+}
+
+.query{
+    margin-bottom: 100px;;
+}
+
+.breadcrumb_last{
+    color: $orange;
+}
+
+.fa-square-envelope, .fa-square-phone{
+    color: $orange;
+    font-size: 25px;
+}
+
+input,select{
+  border-color: none !important;
+
+  &:focus {
+    outline: none !important;
+    border-color: $orange !important;
+  }
+}
+
+
+
+

@@ -21,8 +21,10 @@ render_site_banner("vehicles_banner");
             while ($vehicles->have_posts()) {
                 $vehicles->the_post();
             ?>
-                <div class="col-12 col-md-4">
-                    <?php get_template_part("inc/partials/vehicle-card"); ?>
+                <div class="col-12 col-lg-4">
+                    <div>
+                        <?php get_template_part("inc/partials/vehicle-card"); ?>
+                    </div>
                 </div>
             <?php
             }

@@ -1,0 +1,92 @@
+.navigation{
+
+    &__links{
+        display: flex;
+        justify-content: center;
+        align-items: left;
+        flex-direction: column;
+        margin-left: 20px;
+
+        @include media-breakpoint-up(lg) {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            margin-left: 0;
+        }
+
+        &__container{
+
+            background-color: $orange;
+            padding: 25px 0;
+            right: -100%;
+            position: fixed;
+            height: 100vh;
+
+            @include media-breakpoint-up(lg) {
+                margin-top: 40px;
+                padding: 0;
+                background-color: transparent;
+                height: 0;
+                right: 0;
+                position: relative;
+            }
+        }
+    }
+
+    &__link{
+
+        font-size: 40px;
+
+        a{
+            color: $white;
+        }
+
+        @include media-breakpoint-up(lg) {
+            font-size: $font-size-base;
+
+            a{
+                color: $black;
+            }
+        }
+    }
+
+    &__burger{
+        display: block;
+        z-index: 200;
+        position: absolute;
+        margin-top: -35px;
+
+        @include media-breakpoint-up(lg) {
+            display: none;
+            margin-top: -100px;
+            }
+        }
+        
+    &__burger div{
+        width: 25px;
+        height: 3px;
+        background-color: $black;
+        margin: 5px;
+        transition: all 0.3s ease;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    }
+}
+
+// nav-animations
+
+.toggle{
+    .line__one{
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .line__two{
+        opacity: 0;
+    }
+    .line__three{
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
+
+.nav-active{
+    right: 0;
+    transition: right .5s ease-in;
+}

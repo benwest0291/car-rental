@@ -1,8 +1,6 @@
 <?php
-// Customizer 
 $email = get_theme_mod('contact_email');
 $telephone = get_theme_mod('contact_telephone');
-
 $contactInformationHeading = get_field("contact_information_heading");
 $contactInformationParagraph = get_field("contact_information_paragraph");
 $contactLocation = get_field("contact_location");
@@ -16,8 +14,8 @@ if ($form != null) {
 
 <section class="contact__block" style="background-image: url(<?php echo ($contactBackgroundImage != null ? $contactBackgroundImage['url'] : ''); ?>);">
     <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6 mt-5">
+        <div class="row gx-10">
+            <div class="col-12 col-md-7 mt-5">
                 <div class="contact__block__container">
                     <?php if ($contactInformationHeading != null) { ?>
                         <h2 mb-3"><?php echo $contactInformationHeading; ?></h2>
@@ -46,7 +44,7 @@ if ($form != null) {
                     <?php } ?>
                 </div>
             </div>
-            <div class=" col-12 col-md-6 mt-5">
+            <div class=" col-12 col-md-5 mt-5">
                 <?php if ($formShortcode != null) {
                     echo do_shortcode($formShortcode);
                 } ?>
