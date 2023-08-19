@@ -2,13 +2,10 @@
 
    &__image{
 
-        display: none;
-
-     @include media-breakpoint-up(md) {
+     @include media-breakpoint-up(lg) {
         position: absolute;
         width: 280px;
         margin-top: 190px;
-        display: block;
         }
     }
 

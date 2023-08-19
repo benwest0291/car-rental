@@ -27,7 +27,7 @@ if (isset($menuLocations['header'])) {
 <footer class="footer pb-3">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-lg-6 col-xl-3 mt-md-5">
                 <?php if ($logo != null) { ?>
                     <img class="mt-5 mb-3 footer__logo" src="<?php echo $logo; ?>" alt="<?php echo get_bloginfo("name"); ?>"></img>
                 <?php } ?>
@@ -51,7 +51,7 @@ if (isset($menuLocations['header'])) {
                 <?php } ?>
             </div>
 
-            <div class="col-12 col-md-3 mt-md-5">
+            <div class="col-12 col-lg-6 col-xl-3 mt-2 mt-md-5">
                 <h5 class="footer__heading mb-md-4">NAVIGATION</h5>
                 <?php if (!empty($footer_links)) { ?>
                     <ul class="footer__nav">
@@ -64,7 +64,7 @@ if (isset($menuLocations['header'])) {
                 <?php } ?>
             </div>
 
-            <div class="col-12 col-md-3 mt-md-5">
+            <div class="col-12 col-lg-6 col-xl-3 mt-md-5">
                 <h5 class="footer__heading mb-md-4">WORKING HOURS</h5>
                 <ul class="footer__opening__hours">
                     <?php if ($monday != null) { ?>
@@ -97,7 +97,7 @@ if (isset($menuLocations['header'])) {
                 </ul>
             </div>
 
-            <div class="col-12 col-md-3 mt-md-5">
+            <div class="col-12 col-lg-6 col-xl-3 mt-md-5">
                 <h5 class="footer__heading mb-md-4">SUBSCRIPTION</h5>
                 <p class="footer__subscription__text">Subscribe your email address for latest news & updates.</p>
                 <?php if ($formShortcode != null) {
@@ -109,7 +109,7 @@ if (isset($menuLocations['header'])) {
 </footer>
 
 <?php wp_footer(); ?>
-</div><!--Wrapper -->
+</div>
 </body>
 
 </html>

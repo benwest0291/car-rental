@@ -27,7 +27,7 @@ $dealsParagraphThree = $data["deals_paragraph_three"];
         <?php } ?>
 
         <div class="row">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-lg-6">
                 <div class="deals__text__conatiner">
                     <?php if ($dealSmallHeading != null) { ?>
                         <h5><?php echo $dealSmallHeading; ?></h5>
@@ -47,7 +47,7 @@ $dealsParagraphThree = $data["deals_paragraph_three"];
                 </div>
             </div>
 
-            <div class="col-12 col-md-6 deals__right">
+            <div class="col-12 col-lg-6 deals__right">
                 <div class="d-flex">
                     <?php if ($dealsImageOne != null) { ?>
                         <img class="deals__icon__image" src="<?php echo $dealsImageOne['url']; ?>">

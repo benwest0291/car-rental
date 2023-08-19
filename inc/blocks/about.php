@@ -17,17 +17,11 @@ $aboutServiceThree = $data["about_service_three"];
 <section class="about__block">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-6 mt-5">
-                <?php if ($aboutImage != null) { ?>
-                    <img class="about__block__image" src="<?php echo $aboutImage['url']; ?>" />
-                <?php } ?>
-            </div>
-
-            <div class="col-12 col-md-6 mt-5">
+            <div class="col-12 col-lg-6 mt-5 ">
                 <div class="about__block__right__container">
                     <?php if ($aboutSmallHeading != null) { ?>
                         <h5 class="about__block__small__heading"><?php echo $aboutSmallHeading; ?></h5>
-                    <? } ?>
+                    <?php } ?>
 
                     <?php if ($aboutMainHeading != null) { ?>
                         <h2 class="about__block__main__heading mt-2 mb-4"><?php echo $aboutMainHeading; ?></h2>
@@ -79,6 +73,12 @@ $aboutServiceThree = $data["about_service_three"];
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="col-12 col-lg-6 mt-5">
+                <?php if ($aboutImage != null) { ?>
+                    <img class="about__block__image" src="<?php echo $aboutImage['url']; ?>" />
+                <?php } ?>
             </div>
         </div>
     </div>

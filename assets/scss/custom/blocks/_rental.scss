@@ -50,9 +50,11 @@
                 cursor: pointer;
                 transition: ease-in-out .3s;
                 font-size: 18px;
+                text-align: center;
 
-                @include media-breakpoint-up(md) {
+                @include media-breakpoint-up(lg) {
                 width: 90%;
+                text-align: left;
                 }
 
                  &:hover, &focus{

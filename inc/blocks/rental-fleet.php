@@ -26,7 +26,7 @@ $rentalFleetParagraph = $data["rental_fleet_paragraph"];
     <div class="rental__fleet__block mt-5 mb-5">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-lg-3">
                     <?php
                     $vehicles = new WP_Query(array(
                         "posts_per_page" => 10,
@@ -48,13 +48,13 @@ $rentalFleetParagraph = $data["rental_fleet_paragraph"];
 
                 </div>
 
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-lg-6">
                     <div class="js-rental__fleet__block__image d-flex justify-content-center mt-5 mb-5">
                         <!-- JS INJECTED -->
                     </div>
                 </div>
 
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-lg-3">
                     <div class="js-rental__fleet__block__chart">
                         <!-- JS INJECTED -->
                     </div>

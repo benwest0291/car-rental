@@ -21,6 +21,11 @@ function add_theme_scripts()
     wp_enqueue_script('slick', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.js', array('jquery'), '1.8.1', true);
     wp_register_script('custom', get_stylesheet_directory_uri() . '/assets/js/custom.js', array('jquery'), '1', true);
 
+    // Load site URL in js
+    wp_localize_script('custom','carRentalData',array(
+        'root_url' => get_site_url()
+    ));
+
     wp_enqueue_script('custom');
     wp_enqueue_script('font-awesome', 'https://kit.fontawesome.com/ff41bfe92a.js', array(), '6.2.0', true);
 }

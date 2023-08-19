@@ -29,7 +29,7 @@ render_testimonials_block("homepage_testimonials");
             while ($testimonials->have_posts()) {
                 $testimonials->the_post();
             ?>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-lg-6">
                     <div class="testimonials__block__cards">
                         <?php get_template_part("inc/partials/testimonial-card"); ?>
                     </div>

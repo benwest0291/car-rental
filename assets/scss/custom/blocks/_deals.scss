@@ -5,9 +5,9 @@
     }
 
     &__right{
-        margin-top: 50px;
+        margin-top: 70px;
 
-        @include media-breakpoint-up(md) {
+        @include media-breakpoint-up(lg) {
            margin-top: 0;
         }
     }
@@ -23,7 +23,7 @@
 
     &__text__conatiner{
 
-        @include media-breakpoint-up(md) {
+        @include media-breakpoint-up(lg) {
             width: 80%;
         }
     }
@@ -42,7 +42,7 @@
     
     &__icon__paragraph{
 
-        @include media-breakpoint-up(md) {
+        @include media-breakpoint-up(lg) {
             width: 80%;
         }
     }

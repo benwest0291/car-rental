@@ -88,6 +88,10 @@ input:focus, select:focus {
   border-color: #FF4D30 !important;
 }
 
+i + p {
+  margin: 2px 0 0 15px;
+}
+
 .footer__logo {
   margin-bottom: 10px;
 }
@@ -301,6 +305,7 @@ input:focus, select:focus {
   right: -100%;
   position: fixed;
   height: 100vh;
+  transition: right 0.5s ease-in;
 }
 @media (min-width: 992px) {
   .navigation__links__container {
@@ -329,13 +334,18 @@ input:focus, select:focus {
 .navigation__burger {
   display: block;
   z-index: 200;
-  position: absolute;
-  margin-top: -35px;
+  top: 45px;
+  right: 30px;
+}
+@media (min-width: 768px) {
+  .navigation__burger {
+    top: 55px;
+    right: 60px;
+  }
 }
 @media (min-width: 992px) {
   .navigation__burger {
     display: none;
-    margin-top: -100px;
   }
 }
 .navigation__burger div {
@@ -359,7 +369,6 @@ input:focus, select:focus {
 
 .nav-active {
   right: 0;
-  transition: right 0.5s ease-in;
 }
 
 .testimonial__card {
@@ -548,7 +557,6 @@ input:focus, select:focus {
 
 .masthead {
   margin-top: -100px;
-  margin-bottom: 50px;
 }
 @media (min-width: 768px) {
   .masthead {
@@ -586,14 +594,14 @@ input:focus, select:focus {
   width: 380px;
   margin-top: 50px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .masthead__image {
     width: 720px;
     margin-top: 0;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .mobile__download__banner__container {
     width: 70%;
     margin-top: 40px;
@@ -659,9 +667,9 @@ input:focus, select:focus {
   }
 }
 .deals__right {
-  margin-top: 50px;
+  margin-top: 70px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .deals__right {
     margin-top: 0;
   }
@@ -675,7 +683,7 @@ input:focus, select:focus {
     margin-bottom: 50px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .deals__text__conatiner {
     width: 80%;
   }
@@ -689,7 +697,7 @@ input:focus, select:focus {
   height: 90px;
   margin-right: 20px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .deals__icon__paragraph {
     width: 80%;
   }
@@ -820,15 +828,9 @@ input:focus, select:focus {
     padding-bottom: 80px;
   }
 }
-.contact__block__info__one {
-  width: 200px;
-}
 .contact__block__info__one p {
   color: #000;
   font-weight: 700;
-}
-.contact__block__info__two {
-  width: 150px;
 }
 .contact__block__info__two p {
   color: #000;
@@ -840,15 +842,11 @@ input:focus, select:focus {
   color: #000;
 }
 
-.faq__block__image {
-  display: none;
-}
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .faq__block__image {
     position: absolute;
     width: 280px;
     margin-top: 190px;
-    display: block;
   }
 }
 .faq__block__top {
@@ -916,10 +914,12 @@ input:focus, select:focus {
   cursor: pointer;
   transition: ease-in-out 0.3s;
   font-size: 18px;
+  text-align: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .rental__fleet ul li {
     width: 90%;
+    text-align: left;
   }
 }
 .rental__fleet ul li:hover, .rental__fleet ul lifocus {

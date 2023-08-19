@@ -15,7 +15,7 @@ if ($form != null) {
 <section class="contact__block" style="background-image: url(<?php echo ($contactBackgroundImage != null ? $contactBackgroundImage['url'] : ''); ?>);">
     <div class="container">
         <div class="row gx-10">
-            <div class="col-12 col-md-7 mt-5">
+            <div class="col-12 col-lg-7 mt-5">
                 <div class="contact__block__container">
                     <?php if ($contactInformationHeading != null) { ?>
                         <h2 mb-3"><?php echo $contactInformationHeading; ?></h2>
@@ -26,15 +26,15 @@ if ($form != null) {
                     <?php } ?>
 
                     <?php if ($telephone != null) { ?>
-                        <div class="d-flex justify-content-between contact__block__info__one">
-                            <i class=" fa-solid mt-1 fa-square-phone"></i>
+                        <div class="d-flex contact__block__info__one">
+                            <i class="fa-solid mt-1 fa-square-envelope"></i>
                             <p class="mt-1"><?php echo $telephone; ?></p>
                         </div>
                     <?php } ?>
 
                     <?php if ($email != null) { ?>
-                        <div class="d-flex justify-content-between contact__block__info__two">
-                            <i class="fa-solid mt-1 fa-square-envelope"></i>
+                        <div class="d-flex contact__block__info__two">
+                            <i class="fa-solid mt-1 fa-square-phone"></i>
                             <p class="mt-1"><?php echo $email; ?></p>
                         </div>
                     <?php } ?>
@@ -44,7 +44,7 @@ if ($form != null) {
                     <?php } ?>
                 </div>
             </div>
-            <div class=" col-12 col-md-5 mt-5">
+            <div class=" col-12 col-lg-5 mt-5">
                 <?php if ($formShortcode != null) {
                     echo do_shortcode($formShortcode);
                 } ?>

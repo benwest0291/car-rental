@@ -21,6 +21,7 @@
             right: -100%;
             position: fixed;
             height: 100vh;
+            transition: right .5s ease-in;
 
             @include media-breakpoint-up(lg) {
                 margin-top: 40px;
@@ -53,14 +54,18 @@
     &__burger{
         display: block;
         z-index: 200;
-        position: absolute;
-        margin-top: -35px;
+        top: 45px;
+        right: 30px;
+
+        @include media-breakpoint-up(md) {
+            top: 55px;
+            right: 60px;
+        }
 
         @include media-breakpoint-up(lg) {
             display: none;
-            margin-top: -100px;
-            }
         }
+    }
         
     &__burger div{
         width: 25px;
@@ -88,5 +93,4 @@
 
 .nav-active{
     right: 0;
-    transition: right .5s ease-in;
 }

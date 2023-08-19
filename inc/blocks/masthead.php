@@ -15,7 +15,7 @@ $mastheadRightBtnUrl = $data["masthead_right_button_url"];
         <?php } ?>
         <div class="container">
             <div class="row masthead__container">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-8 col-lg-6">
                     <div class="w-100">
                         <?php if ($mastheadSmallImage != null) { ?>
                             <h5><?php echo $mastheadSmallImage; ?></h5>
@@ -40,7 +40,7 @@ $mastheadRightBtnUrl = $data["masthead_right_button_url"];
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-4 col-lg-6">
                     <?php if ($mastheadImage != null) { ?>
                         <img class="masthead__image" src="<?php echo $mastheadImage['url']; ?>">
                     <?php } ?>

@@ -22,7 +22,7 @@ if (isset($menuLocations['header'])) {
 </head>
 
 <body <?php body_class(); ?>>
-    <header class="header">
+    <header class="header position-relative">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-2 w-sm-25">
@@ -38,7 +38,7 @@ if (isset($menuLocations['header'])) {
                                     </li>
                                 <?php } ?>
                                 <li class="navigation__link list-unstyled m-1 d-lg-none d-block">
-                                    <a href="<?php site_url('/contact')?>">Contact</a>
+                                    <a href="<?php echo site_url('/contact')?>">Contact</a>
                                 </li>
                             </ul>
                         </nav>
@@ -47,10 +47,10 @@ if (isset($menuLocations['header'])) {
                 <div class="col-12 col-md-2 d-flex justify-content-end">
                     <ul>
                         <li class="navigation__link mt-5 list-unstyled m-1 d-none d-lg-block">
-                            <a class="navigation__contact__btn" href="<?php site_url('/contact')?>">Contact</a>
+                            <a class="navigation__contact__btn" href="<?php echo site_url('/contact')?>">Contact</a>
                         </li>
                     </ul>
-                    <div class="navigation__burger js-navigation__burger">
+                    <div class="navigation__burger js-navigation__burger position-absolute">
                         <div class="line__one"></div>
                         <div class="line__two"></div>
                         <div class="line__three"></div>

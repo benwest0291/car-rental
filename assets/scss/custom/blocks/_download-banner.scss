@@ -1,10 +1,9 @@
 .mobile__download__banner{
 
-    //background-color: $offgrey;
 
     &__container{
 
-        @include media-breakpoint-up(md) {
+        @include media-breakpoint-up(lg) {
         width: 70%;
         margin-top: 40px;
         }

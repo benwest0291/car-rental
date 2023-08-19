@@ -31,13 +31,12 @@ let vehicleToSearch = "audi"
 
 const fetchVehicles = (vehicleToSearch) => {
 
-    // fetch(`http://car-rental.local/wp-json/wp/v2/vehicle?search=${vehicleToSearch}`)
-    fetch(`http://car-rental.local/wp-json/wp/v2/vehicle?search=${vehicleToSearch}`)
+    fetch(`${carRentalData.root_url}/wp-json/wp/v2/vehicle?search=${vehicleToSearch}`)
         .then((response) => response.json())
         .then((data) => {
 
                 mainImage.innerHTML = `
-            ${data.map(item => `<img class="rental__fleet__car mt-2 mb-2" src="${item.acf.home_page_search_image.url}" /> `)} `;
+                ${data.map(item => `<img class="rental__fleet__car mt-2 mb-2" src="${item.acf.home_page_search_image.url}" /> `)} `;
 
                 vehicleGride.innerHTML = `
                 ${data.map(item => `<h4 class="rental__fleet__chart__heading pb-1 pt-1"><span>£${item.acf.cost}</span> / rent per day</h4>

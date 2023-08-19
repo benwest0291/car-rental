@@ -7,7 +7,7 @@ $bannerImage = $data["banner_image"];
 <section class="mobile__download__banner pt-3 pb-1 mt-5">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-6 mt-2">
+            <div class="col-12 col-lg-6 mt-2">
                 <div class="mobile__download__banner__container">
                     <?php if ($bannerHeading != null) { ?>
                         <h2 class="mobile__download__banner__heading mb-4"><?php echo $bannerHeading; ?></h2>
@@ -23,7 +23,7 @@ $bannerImage = $data["banner_image"];
                     <img class="mobile__download__banner__btn" src=" <?php echo get_template_directory_uri(); ?>/assets/images/apple-btn.svg" />
                 </div>
             </div>
-            <div class="col-12 col-md-6 mt-2">
+            <div class="col-12 col-lg-6 mt-2">
                 <?php if ($bannerImage != null) { ?>
                     <img class="mobile__download__banner__image" src="<?php echo $bannerImage['url']; ?>">
                 <?php } ?>
