@@ -50,7 +50,7 @@ $dealsParagraphThree = $data["deals_paragraph_three"];
             <div class="col-12 col-lg-6 deals__right">
                 <div class="d-flex">
                     <?php if ($dealsImageOne != null) { ?>
-                        <img class="deals__icon__image" src="<?php echo $dealsImageOne['url']; ?>" src="<?php echo $dealsImage['alt']; ?>">
+                        <img class="deals__icon__image" src="<?php echo $dealsImageOne['url']; ?>" alt="<?php echo $dealsImage['alt']; ?>">
                     <?php } ?>
 
                     <div>
