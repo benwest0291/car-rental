@@ -807,10 +807,16 @@ i + p {
   font-weight: 800;
   color: #fff;
   font-size: 20px;
-  margin-top: 30px;
+  margin-top: 15px;
   text-align: center;
 }
 @media (min-width: 768px) {
+  .strapline__text h2 {
+    margin-top: 20px;
+    font-size: 32px;
+  }
+}
+@media (min-width: 992px) {
   .strapline__text h2 {
     margin-top: 30px;
     font-size: 32px;

@@ -19,6 +19,7 @@ if (isset($menuLocations['header'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head(); ?>
     <title><?php wp_title();?></title>
+    <meta name="theme-color" content="#2D2D2D">
 </head>
 
 <body <?php body_class(); ?>>
