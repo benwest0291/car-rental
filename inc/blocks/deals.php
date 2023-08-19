@@ -22,7 +22,7 @@ $dealsParagraphThree = $data["deals_paragraph_three"];
 
         <?php if ($dealsImage != null) { ?>
             <div class="d-flex justify-content-center">
-                <img class="deals__image mt-4 mb-4" src="<?php echo $dealsImage['url']; ?>">
+                <img class="deals__image mt-4 mb-4" src="<?php echo $dealsImage['url']; ?>" alt="<?php echo $dealsImage['url']; ?>">
             </div>
         <?php } ?>
 
@@ -50,7 +50,7 @@ $dealsParagraphThree = $data["deals_paragraph_three"];
             <div class="col-12 col-lg-6 deals__right">
                 <div class="d-flex">
                     <?php if ($dealsImageOne != null) { ?>
-                        <img class="deals__icon__image" src="<?php echo $dealsImageOne['url']; ?>">
+                        <img class="deals__icon__image" src="<?php echo $dealsImageOne['url']; ?>" src="<?php echo $dealsImage['alt']; ?>">
                     <?php } ?>
 
                     <div>
@@ -66,7 +66,7 @@ $dealsParagraphThree = $data["deals_paragraph_three"];
 
                 <div class="d-flex">
                     <?php if ($dealsImageTwo != null) { ?>
-                        <img class="deals__icon__image mt-2" src="<?php echo $dealsImageTwo['url']; ?>">
+                        <img class="deals__icon__image mt-2" src="<?php echo $dealsImageTwo['url']; ?>" alt="<?php echo $dealsImage['alt']; ?>">
                     <?php } ?>
                     <div>
                         <?php if ($dealsHeadingTwo != null) { ?>
