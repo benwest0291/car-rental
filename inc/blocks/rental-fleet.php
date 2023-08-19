@@ -58,7 +58,7 @@ $rentalFleetParagraph = $data["rental_fleet_paragraph"];
                     <div class="js-rental__fleet__block__chart">
                         <!-- JS INJECTED -->
                     </div>
-                    <button class="contact__btn mt-1">RESERVE NOW</button>
+                    <a title="RESERVE NOW" href="<?php echo site_url('/contact') ?>" class="rental__fleet__btn text-center d-flex justify-content-center mt-2">RESERVE NOW</a>
                 </div>
             </div>
         </div>

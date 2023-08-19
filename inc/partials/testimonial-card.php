@@ -4,7 +4,7 @@
     </p>
     <div class="testimonial__card__lower mt-5">
         <div class="d-flex justify-content-between">
-            <img src="<?php the_post_thumbnail_url("post"); ?>" />
+            <img src="<?php the_post_thumbnail_url("post"); ?>" alt="testimonial image" />
             <div class="w-100">
                 <p class="testimonial__card__name"><?php the_title(); ?></p>
                 <p class="testimonial__card__location"><?php echo get_the_excerpt(); ?></p>
@@ -12,6 +12,6 @@
         </div>
     </div>
     <div class="d-flex justify-content-end pt-4">
-        <img class="testimonial__card__speech" src="<?php echo get_template_directory_uri(); ?>/assets/images/speech.png" />
+        <img class="testimonial__card__speech" src="<?php echo get_template_directory_uri(); ?>/assets/images/speech.png" alt="speech marks"/>
     </div>
 </div>

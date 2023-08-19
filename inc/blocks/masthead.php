@@ -31,18 +31,18 @@ $mastheadRightBtnUrl = $data["masthead_right_button_url"];
 
                         <div class="masthead__btn__container mt-4">
                             <?php if ($mastheadLeftBtnHeading != null) { ?>
-                                <a class="masthead__orange__btn" href="<?php echo $mastheadLeftBtnUrl; ?>"><?php echo $mastheadLeftBtnHeading; ?><img class="masthead__btn__icon__tick" src=" <?php echo get_template_directory_uri(); ?>/assets/images/tick.png"></a>
+                                <a title="<?php echo $mastheadLeftBtnHeading; ?>" class="masthead__orange__btn" href="<?php echo $mastheadLeftBtnUrl; ?>"><?php echo $mastheadLeftBtnHeading; ?><img class="masthead__btn__icon__tick" src="<?php echo get_template_directory_uri(); ?>/assets/images/tick.png" alt="tick"></a>
                             <?php } ?>
 
                             <?php if ($mastheadRightBtnHeading != null) { ?>
-                                <a class="masthead__black__btn" href="<?php echo $mastheadRightBtnUrl; ?>"><?php echo $mastheadRightBtnHeading; ?><img class="masthead__btn__icon__chevron" src="<?php echo get_template_directory_uri(); ?>/assets/images/cheveron.png"></a>
+                                <a title="<?php echo $mastheadRightBtnHeading; ?>" class="masthead__black__btn" href="<?php echo $mastheadRightBtnUrl; ?>"><?php echo $mastheadRightBtnHeading; ?><img class="masthead__btn__icon__chevron" src="<?php echo get_template_directory_uri(); ?>/assets/images/cheveron.png" alt="chevron"></a>
                             <?php } ?>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 col-lg-6">
                     <?php if ($mastheadImage != null) { ?>
-                        <img class="masthead__image" src="<?php echo $mastheadImage['url']; ?>">
+                        <img class="masthead__image" src="<?php echo $mastheadImage['url']; ?>" alt="<?php echo $mastheadImage['alt']; ?>">
                     <?php } ?>
                 </div>
             </div>

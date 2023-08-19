@@ -34,7 +34,7 @@ $aboutServiceThree = $data["about_service_three"];
                     <div class="d-flex justify-content-between about__block__service__section">
                         <div class="about__block__lower">
                             <?php if ($aboutIconOne != null) { ?>
-                                <img class="about__block__icon" src="<?php echo $aboutIconOne['url']; ?>" />
+                                <img class="about__block__icon" src="<?php echo $aboutIconOne['url']; ?>" alt="icon" />
                             <?php } ?>
 
                             <?php if ($aboutServiceNumberOne != null) { ?>
@@ -47,7 +47,7 @@ $aboutServiceThree = $data["about_service_three"];
                         </div>
                         <div class="about__block__lower">
                             <?php if ($aboutServiceOne != null) { ?>
-                                <img class="about__block__icon" src="<?php echo $aboutIconTwo['url']; ?>" />
+                                <img class="about__block__icon" src="<?php echo $aboutIconTwo['url']; ?>" alt="icon" />
                             <?php } ?>
 
                             <?php if ($aboutServiceNumberTwo != null) { ?>
@@ -60,7 +60,7 @@ $aboutServiceThree = $data["about_service_three"];
                         </div>
                         <div class="about__block__lower">
                             <?php if ($aboutIconThree != null) { ?>
-                                <img class="about__block__icon" src="<?php echo $aboutIconThree['url']; ?>" />
+                                <img class="about__block__icon" src="<?php echo $aboutIconThree['url']; ?>" alt="icon" />
                             <?php } ?>
 
                             <?php if ($aboutServiceNumberThree != null) { ?>
@@ -77,7 +77,7 @@ $aboutServiceThree = $data["about_service_three"];
 
             <div class="col-12 col-lg-6 mt-5">
                 <?php if ($aboutImage != null) { ?>
-                    <img class="about__block__image" src="<?php echo $aboutImage['url']; ?>" />
+                    <img class="about__block__image" src="<?php echo $aboutImage['url']; ?>" alt="<?php echo $aboutImage['alt']; ?>" />
                 <?php } ?>
             </div>
         </div>

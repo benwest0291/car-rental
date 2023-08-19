@@ -163,6 +163,13 @@ i + p {
 .footer__link a {
   color: #706F7B !important;
 }
+.footer__base {
+  background-color: #000;
+  padding: 5px;
+}
+.footer__base p {
+  color: #fff;
+}
 
 .navigation__contact__btn {
   background-color: #FF4D30;
@@ -956,6 +963,21 @@ i + p {
 .rental__fleet__chart__heading span {
   font-weight: 800;
   font-size: 30px;
+}
+.rental__fleet__btn {
+  background-color: #FF4D30;
+  color: #fff !important;
+  border-color: transparent;
+  -webkit-box-shadow: 0px 6px 17px 4px rgba(0, 0, 0, 0.27);
+  box-shadow: 0px 6px 17px 4px rgba(0, 0, 0, 0.27);
+  border-radius: 3px;
+  transition: ease-in 0.4s;
+  margin-top: 25px;
+  padding: 10px 20px;
+}
+.rental__fleet__btn:hover, .rental__fleet__btn:focus {
+  background-color: #000;
+  color: #fff;
 }
 
 .list__item__active {

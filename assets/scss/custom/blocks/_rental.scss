@@ -94,6 +94,22 @@
         }
     }
 
+  &__btn{
+    background-color: $orange;
+    color: $white !important;
+    border-color: transparent;
+    -webkit-box-shadow: 0px 6px 17px 4px rgba(0,0,0,0.27);
+    box-shadow: 0px 6px 17px 4px rgba(0,0,0,0.27);
+    border-radius: 3px;
+    transition: ease-in .4s;
+    margin-top: 25px;
+    padding: 10px 20px;
+
+    &:hover, &:focus{
+      background-color: $black;
+      color: $white;
+    }
+  }
 }
 
 // class added through JS when clicked

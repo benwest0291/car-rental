@@ -42,7 +42,7 @@ $dealsParagraphThree = $data["deals_paragraph_three"];
                     <?php } ?>
 
                     <?php if ($dealsButtonText != null) { ?>
-                        <a class="deals__btn mt-3 text-decoration-none" href="<?php echo $dealsButtonUrl; ?>"><?php echo $dealsButtonText; ?><img class=" masthead__btn__icon__chevron" src="<?php echo get_template_directory_uri(); ?>/assets/images/cheveron.png"></a>
+                        <a title="<?php echo $dealsButtonText; ?>" class="deals__btn mt-3 text-decoration-none" href="<?php echo $dealsButtonUrl; ?>"><?php echo $dealsButtonText; ?><img class="masthead__btn__icon__chevron" alt="chevron" src="<?php echo get_template_directory_uri(); ?>/assets/images/cheveron.png"></a>
                     <?php } ?>
                 </div>
             </div>
@@ -81,7 +81,7 @@ $dealsParagraphThree = $data["deals_paragraph_three"];
 
                 <div class="d-flex">
                     <?php if ($dealsImageThree != null) { ?>
-                        <img class="deals__icon__image mt-2" src="<?php echo $dealsImageThree['url']; ?>">
+                        <img class="deals__icon__image mt-2" src="<?php echo $dealsImageThree['url']; ?>" alt="<?php echo $dealsImageThree['alt']; ?>">
                     <?php } ?>
                     <div>
                         <?php if ($dealsHeadingThree != null) { ?>

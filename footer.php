@@ -107,6 +107,9 @@ if (isset($menuLocations['header'])) {
         </div>
     </div>
 </footer>
+<div class="footer__base">
+    <a title="link to Ben West Dev" href="https://benwest.dev" target="_blank"><p class="text-center mt-1">Site developed with ❤️ by Ben West</p></a>
+</div>
 
 <?php wp_footer(); ?>
 </div>

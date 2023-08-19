@@ -25,7 +25,7 @@ $tripPlanParagraphThree = $data["trip_plan_paragraph_three"];
             <div class="col-12 col-lg-4 mt-2">
                 <div class="trip__plan__card">
                     <?php if ($tripPlanImageOne != null) { ?>
-                        <img class="" src="<?php echo $tripPlanImageOne['url']; ?>" />
+                        <img class="" src="<?php echo $tripPlanImageOne['url']; ?>" alt="icon" />
                     <?php } ?>
 
                     <?php if ($tripPlanTitleOne != null) { ?>
@@ -40,7 +40,7 @@ $tripPlanParagraphThree = $data["trip_plan_paragraph_three"];
             <div class="col-12 col-lg-4 mt-2">
                 <div class="trip__plan__card">
                     <?php if ($tripPlanImageTwo != null) { ?>
-                        <img class="" src="<?php echo $tripPlanImageTwo['url']; ?>">
+                        <img class="" src="<?php echo $tripPlanImageTwo['url']; ?>" alt="icon"/>
                     <?php } ?>
 
                     <?php if ($tripPlanTitleTwo != null) { ?>
@@ -55,7 +55,7 @@ $tripPlanParagraphThree = $data["trip_plan_paragraph_three"];
             <div class="col-12 col-lg-4 mt-2">
                 <div class="trip__plan__card">
                     <?php if ($tripPlanImageThree != null) { ?>
-                        <img class="" src="<?php echo $tripPlanImageThree['url']; ?>">
+                        <img class="" src="<?php echo $tripPlanImageThree['url']; ?>" alt="icon"/>
                     <?php } ?>
 
                     <?php if ($tripPlanTitleThree != null) { ?>
