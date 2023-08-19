@@ -11,7 +11,7 @@ if (isset($menuLocations['header'])) {
 ?>
 
 <!DOCTYPE html>
-<html lang=<?php echo language_attributes(); ?>>
+<html lang="<?php language_attributes(); ?>">
 
 <head>
     <meta charset="<?php bloginfo("charset"); ?>">
