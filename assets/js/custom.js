@@ -36,7 +36,7 @@ const fetchVehicles = (vehicleToSearch) => {
         .then((data) => {
 
                 mainImage.innerHTML = `
-                ${data.map(item => `<img class="rental__fleet__car mt-2 mb-2" src="${item.acf.home_page_search_image.url}" /> `)} `;
+                ${data.map(item => `<img class="rental__fleet__car mt-2 mb-2" alt="car rental image" src="${item.acf.home_page_search_image.url}" /> `)} `;
 
                 vehicleGride.innerHTML = `
                 ${data.map(item => `<h4 class="rental__fleet__chart__heading pb-1 pt-1"><span>£${item.acf.cost}</span> / rent per day</h4>
